@@ -24,4 +24,9 @@
 		 * @return object
 		 */
 		public function createInstance(string $className, array $dependencies): object;
+		
+		/**
+		 * Provider priority - higher numbers = higher priority
+		 */
+		public function getPriority(): int;
 	}
