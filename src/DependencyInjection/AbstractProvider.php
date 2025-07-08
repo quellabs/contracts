@@ -37,7 +37,15 @@
 		 * @return int User providers get higher priority by default
 		 */
 		public function getPriority(): int {
-			return 0;
+			// Fetch class namespace
+			$className = get_class($this);
+			
+			// User providers (not in framework namespace) get higher priority
+			if (!str_starts_with($className, 'Quellabs\\')) {
+				return 100; // Higher priority = checked first
+			} else {
+				return 0;   // Lower priority = framework fallback
+			}
 		}
 		
 		/**
