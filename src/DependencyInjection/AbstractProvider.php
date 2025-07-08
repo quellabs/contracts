@@ -34,11 +34,10 @@
 		
 		/**
 		 * Default priority for user providers
-		 * @return int
-		 *
+		 * @return int User providers get higher priority by default
 		 */
 		public function getPriority(): int {
-			return 100; // User providers get higher priority by default
+			return 0;
 		}
 		
 		/**
