@@ -1,6 +1,6 @@
 <?php
 	
-	namespace Quellabs\Contracts\TaskScheduler;
+	namespace Quellabs\Contracts\Scheduler;
 	
 	use Quellabs\Contracts\Discovery\ProviderInterface;
 	

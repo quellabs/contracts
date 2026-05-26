@@ -1,8 +1,7 @@
 <?php
 	
-	namespace Quellabs\Contracts\TaskScheduler;
+	namespace Quellabs\Contracts\Scheduler;
 	
-	use http\Exception\RuntimeException;
 	use Quellabs\Contracts\Discovery\ProviderInterface;
 	
 	/**
